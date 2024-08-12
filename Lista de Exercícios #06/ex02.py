@@ -18,3 +18,4 @@ print(f'As pessoas no dicionário são: ')
 for c, dic in enumerate(turma):
     for k, v in dic.items():
         print(f'\033[35m{v}\033[m tem o ID: \033[32m{k}\033[m')
+arquivo.close()
