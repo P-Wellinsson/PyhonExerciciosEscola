@@ -22,11 +22,8 @@ for i in arquive:
             break
     allip.append(ip)
 for dic in allip:
-    print('O IP:', end=' ')
     if dic['val']:
-        print(dic['ip'], end=' ')
-        print('\033[32mEstá Correto\033[m')
+        print(f'\033[32mO IP: {dic["ip"]} Está Correto\033[m')
     else:
-        print(dic['ip'], end=' ')
-        print('\033[31mEstá Errado\033[m')
+        print(f'\033[31mO IP: {dic["ip"]} Está Errado\033[m')
 arquive.close()
