@@ -1,6 +1,22 @@
-n = int(input('Você quer ler quantos nomes? '))
 arquivo = open('names.txt', 'w')
-for a in range(n):
-    name = input('Digite um nome: ')
+arquivo.write('Josevan \n')
+arquivo.write('Clebisson \n')
+arquivo.write('Joana \n')
+arquivo.write('Texeira \n')
+arquivo.write('Irineu \n')
+arquivo.write('Pablo \n')
+arquivo.write('Vas Cobas \n')
+arquivo.write('Alex \n')
+arquivo.write('Mariana \n')
+arquivo.write('Dora \n')
 arquivo.close()
+names = []
 arquivo = open('names.txt', 'r')
+for n in arquivo:
+    names.append(n.strip())
+arquivo.close()
+names.sort()
+arquivo = open('names.txt', 'w')
+for n in range(len(names)):
+    arquivo.write(f'{names[n]} \n')
+arquivo.close()
