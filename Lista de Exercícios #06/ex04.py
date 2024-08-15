@@ -1,14 +1,9 @@
+quant = int(input('Quer inserir quantos Nomes? '))
+
 arquivo = open('names.txt', 'w')
-arquivo.write('Josevan \n')
-arquivo.write('Clebisson \n')
-arquivo.write('Joana \n')
-arquivo.write('Texeira \n')
-arquivo.write('Irineu \n')
-arquivo.write('Pablo \n')
-arquivo.write('Vas Cobas \n')
-arquivo.write('Alex \n')
-arquivo.write('Mariana \n')
-arquivo.write('Dora \n')
+for n in range(quant):
+    arquivo.write(input(f'Digite o {n+1}º Nome: ').title())
+    arquivo.write('\n')
 arquivo.close()
 names = []
 arquivo = open('names.txt', 'r')
