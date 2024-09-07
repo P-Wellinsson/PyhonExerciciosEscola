@@ -18,9 +18,6 @@ def jogar():
     palavra_secreta = carrega_palavra_secreta()
     letras_acertadas = ['_' for letra in palavra_secreta]
 
-    palavra_secreta = 'banana'
-    letras_acertadas = ['_', '_', '_', '_', '_', '_']
-
     enforcou = False
     acertou = False
     erros = 0
