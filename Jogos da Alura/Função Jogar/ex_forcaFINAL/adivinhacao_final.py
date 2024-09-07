@@ -19,7 +19,7 @@ def jogar():
     random = randint(0,99)
 
     for rodada in range(1, total_de_tentativas + 1):
-        print('Tentativa {} de {}'.format(rodada, total_de_tentativas))
+        print(f'Tentativa {rodada} de {total_de_tentativas}')
         chute = int(input('Digite um numero entre 0 e 99 '))
         print('Você digitou: ', chute)
         acertou = random == chute
@@ -36,5 +36,6 @@ def jogar():
             elif (menor):
                 print('Você errou! O seu chute foi menor que o número secreto')
 
-    print('Fim do jogo!')
-    print('Sua pontuação final é: {}'.format(pontos))
+    print('\033[34mFim do jogo!')
+    print(f'Sua pontuação final é: {pontos}')
+    print(f'O número secreto é {random}\033[m')
