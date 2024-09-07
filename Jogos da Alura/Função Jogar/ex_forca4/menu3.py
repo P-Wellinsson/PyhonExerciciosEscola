@@ -1,4 +1,4 @@
-import ex_forca4.forca1a as forca
+import forca1a as forca
 
 print(33 * '*')
 print('**********MENU DE JOGOS**********')
