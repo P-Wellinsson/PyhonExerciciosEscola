@@ -1,5 +1,5 @@
 import adivinhacao
-import forca
+import ex_forca4.forca1a as forca
 
 print(33 * '*')
 print('**********MENU DE JOGOS**********')

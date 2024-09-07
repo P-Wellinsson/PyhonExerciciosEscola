@@ -18,9 +18,6 @@ def jogar():
     palavra_secreta = carrega_palavra_secreta()
     letras_acertadas = ['_' for letra in palavra_secreta]
 
-    palavra_secreta = 'banana'
-    letras_acertadas = ['_', '_', '_', '_', '_', '_']
-
     enforcou = False
     acertou = False
     erros = 0
@@ -40,10 +37,9 @@ def jogar():
         print(letras_acertadas)
 
     if(acertou):
-        print('Você ganhou!!')
+        imprime_mensagem_vencedor()
     else:
-        print('Você perdeu!!')
-    print('Fim do jogo')
+        imprime_mensagem_perdedor()
 
 
 def imprime_mensagem_abertura():
@@ -67,3 +63,11 @@ def marca_chute_correto(chute, letras_acertadas, palavra_secreta):
         if (chute == letra):
             letras_acertadas[posicao] = letra
         posicao += 1
+
+
+def imprime_mensagem_vencedor():
+    print('Você ganhou!')
+
+
+def imprime_mensagem_perdedor():
+    print('Você perdeu!')
