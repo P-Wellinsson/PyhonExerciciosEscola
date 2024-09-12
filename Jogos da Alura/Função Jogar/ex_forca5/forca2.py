@@ -1,5 +1,5 @@
 from random import randrange
-from arquivo_final import arq
+from arquivo import arq
 
 def carrega_palavra_secreta():
     arq()

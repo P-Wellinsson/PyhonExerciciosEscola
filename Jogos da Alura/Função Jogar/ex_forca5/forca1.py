@@ -1,5 +1,5 @@
 from random import randrange
-from arquivo_final import arq
+from arquivo import arq
 
 def carrega_palavra_secreta():
     arq()
@@ -33,9 +33,8 @@ def jogar():
             marca_chute_correto(chute, letras_acertadas, palavra_secreta)
         else:
             erros += 1
-            desenha_forca(erros)
 
-        enforcou = erros == 7
+        enforcou = erros == 6
         acertou = '_' not in letras_acertadas
         print(letras_acertadas)
 
