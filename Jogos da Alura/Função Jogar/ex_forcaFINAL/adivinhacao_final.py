@@ -59,7 +59,7 @@ def defini_nivel(nivel):
 
 
 def imprime_mensagem_vencedor():
-    print('\033[32mParabéns, você ganhou!')
+    print('\033[32mParabéns, você ganhou!\033[m')
     print("       ___________     ")
     print("      '._==_==_=_.'    ")
     print("      .-\\:      /-.   ")
