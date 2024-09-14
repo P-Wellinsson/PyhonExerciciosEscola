@@ -18,7 +18,6 @@ def carrega_palavra_secreta():
 def jogar():
     imprime_mensagem_abertura()
     palavra_secreta = carrega_palavra_secreta()
-    print(f'\033[36mPalavra Secreta:{palavra_secreta}. Obs: Somente para demonstração\033[m')
     letras_acertadas = ['_' for letra in palavra_secreta]
 
     enforcou = False
